@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+        <title>Caietul cu retete</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1> Caietul cu retete al mamei</h1>
+            <p>Descopera retetele din caietul mamei, poti adauga si alte noi retete</p>
+        </header>
+    
+        <main>
+            <section class="formular-section">
+                <h2>Adauga o reteta preferata</h2>
+
+                <form id="formular-reteta">
+                    <label for="nume"> Numele retetei</label>
+                    <input type="text" id="nume" name="name" required maxlength="100">
+
+                    <label for="ingrediente">Ingrediente</label>
+                    <textarea name="ingredientes" id="ingrediente" required></textarea>
+
+                    <label for="instructiuni">Modul de preparare</label>
+                    <textarea id="instrucctiuni" name="instructions" required></textarea>
+
+                    <label for="timp">Timpul de preparare in minute</label>
+                    <input type="number" id="timp" name="prepTimeMinutes" min="1" required>
+
+                    <button type="submit" id="buton-adaugare">Adauga reteta!</button>
+
+                    <p id="mesaj-formular" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <section class="retete-section">
+                <h2>Retete disponibile din caietul mamei</h2>
+
+                <label for="cautare"> Cauta o reteta</label>
+                <input type="search" id="cautare" name="cautare" placeholder="Exemplu: Ciorba de perisoare">
+
+                <p id="status-lista" role="status" aria-live="polite"></p>
+
+                <div id="lista-retete" class="grid-retete"></div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Caietul cu retete - Poriect FSEGA ANUL3</p>
+        </footer>
+
+    </body>
+</html>

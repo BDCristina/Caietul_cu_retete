@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: black;
+}
+
+header {
+    background: #527a45;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #527a45;
+}
+
+ .formular-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 1 3px 12px #00000012;
+
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+ }
+
+ label {
+    font-weight: bold;
+ }
+
+ input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border:  1px solid #ccc;
+    border-radius: 7px;
+    font: inherit;
+ }
+
+ textarea {
+    min-height: 90px;
+    resize: vertical;
+ }
+
+ button {
+    background: #527a45;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 13px;
+    cursor: pointer;
+    font: inherit;
+ }
+
+ button:hover {
+    background: #3c6033;
+ }
+
+ button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+ }
+
+ #cautare {
+    margin: 12px 0 20 px;
+ }
+
+ .grid-retete {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+
+ }
+
+ .reteta {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    overflow-wrap: anywhere;
+ }
+
+ .reteta h3 {
+    color: #527a45;
+    margin-top: 0;
+ }
+
+ .reteta p {
+    line-height: 1.6;
+ }
+
+ #mesaj-formular, #status-lista {
+    overflow-wrap: anywhere;
+
+ }
+
+ .eroare {
+    color: #b42318;
+ }
+
+ .succes {
+    color: #28723c;
+ }
+
+ footer {
+    background: #527a45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+ }
+
+ @media (max-width: 768px) {
+    .grid-retete {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+ }
+
+ @media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+    .formular-section {
+        padding: 15px;
+    }
+    .grid-retete {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+ }
