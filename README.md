@@ -14,5 +14,5 @@
 
 Important de stiut: Retetele adaugate nu sunt salvate permanent.
 
-Link site: (https://USERNAME.github.io/caietul-cu-retete/)
+Link site: (https://BDCristina.github.io/Caietul_cu_retete/)
 Link repository: (https://github.com/BDCristina/Caietul_cu_retete.git)
